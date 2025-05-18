@@ -1,0 +1,151 @@
+form .btn {
+    background: none;
+}
+.section-form {
+    min-height: unset;
+    margin: 0 0 150px;
+}
+.section-form .container {
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 30px;
+}
+.section-form .form-container,
+.section-form .aside-container {
+    background: rgba(190, 209, 255, 0.5);
+    padding: 35px 45px 45px;
+}
+.section-form .btn {
+    color: #4E4BD3;
+}
+.section-form .btn:hover {
+    background: #4E4BD3;
+    color: #DBFE02;
+}
+.section-form .btn .btn-arrow * {
+    fill: #4E4BD3;
+}
+.section-form .btn:hover .btn-arrow * {
+    fill: #DBFE02;
+}
+.form-title {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+.form-description {
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 20px;
+    padding: 20px 0;
+}
+.form-group .input-text {
+    flex: 0 0 calc((100% - 30px)/2);
+}
+.input-text .input-field,
+.textarea .input-textarea {
+    width: 100%;
+    background: #fff;
+    padding: 0 15px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 20px;
+    color: #4E4BD3;
+    border: 0;
+    outline: none;
+}
+.textarea .input-textarea {
+    height: 280px;
+}
+.input-text .input-field,
+.input-text .input-field::placeholder,
+.textarea .input-textarea,
+.textarea .input-textarea::placeholder {
+    color: #4E4BD3;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+.form-group .textarea {
+    flex: 0 0 100%;
+}
+.checkbox {
+    position: relative;
+    display: inline-flex;
+    align-items: flex-start;
+    cursor: pointer;
+}
+.checkbox-input {
+    position: absolute;
+    opacity: 0;
+    outline: 0;
+}
+.checkbox-wrapper {
+    position: relative;
+    height: 22px;
+}
+.checkbox-symbol {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border: 1px solid #fff;
+    margin-right: 10px;
+}
+.checkbox-hook {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+.checkbox-label {
+    color: #4E4BD3;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+.checkbox-input:checked {
+    border-color: #4E4BD3;
+    color: #4E4BD3;
+}
+.checkbox-input:checked~.checkbox-wrapper .checkbox-symbol {
+    border-color: #4E4BD3;
+}
+.checkbox-input:checked~.checkbox-wrapper .checkbox-hook {
+    display: block;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    color: #4E4BD3;
+}
+
+.section-form .aside-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+.aside-head {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 700;
+}
+.aside-action,
+.form-action {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+}

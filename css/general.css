@@ -4,35 +4,85 @@ html {
 body {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-size: 20px;
   color: #4E4BD3;
 }
 .btn {
-  border: 1px solid #DBFE02;
+  border: 1px solid;
   height: 68px;
   border-radius: 100px;
   font-weight: 700;
   font-size: 20px;
-  color: #DBFE02;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 20px;
   padding: 0 30px 0 40px;
+  cursor: pointer;
 }
 .btn .btn-arrow {
   width: 35px;
   height: auto;
   transform: rotate(-90deg);
 }
-.btn .btn-arrow * {
+.btn-primary-line {
+  border: 1px solid #4E4BD3;
+  color: #4E4BD3;
+}
+.btn-primary-line .btn-arrow * {
+  fill: #4E4BD3;
+}
+.btn-primary-line:hover{
+  background: #4E4BD3;
+  color: #DBFE02;
+}
+.btn-primary-line:hover .btn-arrow * {
   fill: #DBFE02;
 }
-.btn:hover {
+.btn-primary-fill {
+  border: 1px solid #4E4BD3;
+  color: #DBFE02;
+  background: #4E4BD3;
+}
+.btn-primary-fill .btn-arrow * {
+  fill: #DBFE02;
+}
+.btn-primary-fill:hover{
+  background: #DBFE02;
+  border: 1px solid #DBFE02;
+  color: #4E4BD3;
+}
+.btn-primary-fill:hover .btn-arrow * {
+  fill: #4E4BD3;
+}
+.btn-secondary-line {
+  border: 1px solid #DBFE02;
+  color: #DBFE02;
+}
+.btn-secondary-line .btn-arrow * {
+  fill: #DBFE02;
+}
+.btn-secondary-line:hover{
   background: #DBFE02;
   color: #4E4BD3;
 }
-.btn:hover .btn-arrow * {
+.btn-secondary-line:hover .btn-arrow * {
   fill: #4E4BD3;
+}
+.btn-secondary-fill {
+  border: 1px solid #DBFE02;
+  background: #DBFE02;
+  color: #4E4BD3;
+}
+.btn-secondary-fill .btn-arrow * {
+  fill: #4E4BD3;
+}
+.btn-secondary-fill:hover{
+  border: 1px solid #4E4BD3;
+  background: #4E4BD3;
+  color: #DBFE02;
+}
+.btn-secondary-fill:hover .btn-arrow * {
+  fill: #DBFE02;
 }
