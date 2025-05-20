@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alive</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Header starts here -->
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <svg width="115" height="68" viewBox="0 0 115 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M31.2752 4.74965L24.4641 7.28907V35.3167H31.2752V4.74965Z" fill="#DBFE02"/>
+                <path d="M34.0088 35.3167H40.7735V15.9889L34.0088 18.4813V35.3167Z" fill="#DBFE02"/>
+                <path d="M29.5609 61.7455C27.2905 61.7455 25.5762 60.0996 25.5762 57.7483C25.5762 55.397 27.2905 53.7981 29.5609 53.7981C31.8312 53.7981 32.8042 54.8797 33.3139 56.5256L39.4299 54.2683C37.2986 49.1895 33.2212 47.4965 29.3292 47.4965C23.1205 47.4965 18.7651 51.964 18.7651 57.7012C18.7651 63.4384 23.1668 68 29.3292 68C35.4916 68 37.8083 65.9779 39.5226 60.9461L33.4529 59.018C32.7579 60.758 31.5069 61.6985 29.5609 61.6985" fill="#DBFE02"/>
+                <path d="M53.4227 47.4965C50.8744 47.4965 48.9747 48.343 47.8164 49.7068V36.8686L40.959 39.408V67.4357H47.8164V57.5131C47.8164 55.397 48.7894 53.704 51.0597 53.704C53.3301 53.704 54.0251 54.7856 54.0251 56.9488V67.4357H60.8824V55.397C60.8824 50.6943 58.3341 47.4965 53.3764 47.4965" fill="#DBFE02"/>
+                <path d="M95.5863 61.7455C93.3623 61.7455 91.5553 60.0055 91.5553 57.7953C91.5553 55.5851 93.3623 53.7981 95.5863 53.7981C97.8103 53.7981 99.6637 55.5851 99.6637 57.7483C99.6637 59.9115 97.8567 61.7455 95.5863 61.7455ZM95.5863 47.4965C89.7483 47.4965 84.8369 51.964 84.8369 57.7953C84.8369 63.6266 89.5629 68 95.5863 68C101.61 68 106.336 63.5325 106.336 57.7012C106.336 51.87 101.471 47.4965 95.5863 47.4965Z" fill="#DBFE02"/>
+                <path d="M73.2533 61.7455C71.0293 61.7455 69.2223 60.0055 69.2223 57.7953C69.2223 55.5851 71.0293 53.7981 73.2533 53.7981C75.4773 53.7981 77.3307 55.5851 77.3307 57.7483C77.3307 59.9115 75.5237 61.7455 73.2533 61.7455ZM73.2533 47.4965C67.4153 47.4965 62.5039 51.964 62.5039 57.7953C62.5039 63.6266 67.2299 68 73.2533 68C79.2767 68 84.0027 63.5325 84.0027 57.7012C84.0027 51.87 79.1377 47.4965 73.2533 47.4965Z" fill="#DBFE02"/>
+                <path d="M108.143 39.361V67.4357H115V36.8216L108.143 39.361Z" fill="#DBFE02"/>
+                <path d="M11.3518 21.6791C13.6221 21.6791 15.3365 23.4191 15.3365 25.6763C15.3365 27.9336 13.6221 29.6736 11.3518 29.6736C9.08145 29.6736 7.32077 27.9336 7.32077 25.6763C7.32077 23.4191 9.03512 21.6791 11.3518 21.6791ZM10.0081 35.787C11.6298 35.787 13.6685 35.2227 15.1512 33.8119V35.2227H21.6379V15.0954L15.2438 17.5408C13.7611 15.9889 11.7225 15.4716 10.2398 15.4716C4.58709 15.4716 0.695068 20.1743 0.695068 25.7704C0.695068 31.3665 4.44809 35.787 10.0545 35.787" fill="#DBFE02"/>
+                <path d="M37.3912 12.509C39.4762 12.509 41.1905 10.769 41.1905 8.65284C41.1905 6.53665 39.4762 4.79668 37.3912 4.79668C35.3061 4.79668 33.5918 6.53665 33.5918 8.65284C33.5918 10.769 35.3061 12.509 37.3912 12.509Z" fill="#DBFE02"/>
+                <path d="M10.9347 54.9267C7.92305 54.1272 7.36704 53.8921 7.36704 53.1867C7.36704 52.4813 7.83038 52.2462 8.89605 52.2462C9.96173 52.2462 11.3054 52.8105 12.0931 53.657L17.2361 51.7289C15.6608 49.2365 12.8344 47.6376 9.08139 47.6376C5.32836 47.6376 0.64867 50.177 0.64867 53.9862C0.64867 57.7953 2.22401 59.065 7.04271 60.1936C10.8421 61.0871 11.2591 61.2282 11.2591 62.0277C11.2591 62.8271 10.4251 63.0622 9.17405 63.0622C7.92305 63.0622 6.39404 62.5449 5.3747 61.3223L0 63.3444C1.71434 66.7303 5.74537 67.953 9.08139 67.953C14.3171 67.953 17.7458 65.4136 17.7458 61.5104C17.7458 57.6072 15.9851 56.2434 10.8884 54.9267" fill="#DBFE02"/>
+                <path d="M77.933 0V0.940526C77.933 3.19779 76.265 4.98479 74.2726 4.98479H69.2686C63.1989 4.98479 58.1486 9.64039 57.2682 15.8479L55.2295 27.2752V27.5574C55.0905 28.2628 54.4882 28.7331 53.7469 28.7331C53.0055 28.7331 52.4032 28.2158 52.2642 27.5104V27.2282L50.1792 15.7538L43.5535 18.1992L45.4531 28.8741C46.1945 32.8243 49.6695 35.834 53.7469 35.834C57.8242 35.834 61.2529 32.9184 62.0406 29.0152L63.1526 22.8077L64.2646 16.5533C64.7279 13.9198 66.8129 11.9917 69.315 11.9917H74.319C80.2033 11.9917 84.9294 7.00692 84.9294 0.893499V0H77.933Z" fill="#DBFE02"/>
+                <path d="M86.3658 22.1494C86.3658 26.0055 83.3078 29.1093 79.5084 29.1093C78.3501 29.1093 77.2844 28.8271 76.3114 28.3098C78.4427 27.0871 79.8791 24.7828 79.8791 22.1494C79.8791 18.2462 76.7747 15.0954 72.929 15.0954C69.0834 15.0954 65.979 18.2462 65.979 22.1494C65.979 29.7206 72.0487 35.9281 79.5547 35.9281C87.0608 35.9281 79.6011 35.9281 79.6474 35.9281C87.0608 35.9281 93.0842 29.7206 93.0842 22.1494H86.3658ZM74.0874 22.7137C73.902 23.231 73.3924 23.5602 72.8364 23.5602C72.2804 23.5602 71.4927 22.9488 71.4927 22.1964C71.4927 21.444 72.095 20.8326 72.8364 20.8326C73.5777 20.8326 73.0217 20.8326 73.1144 20.8326C73.7167 20.9267 74.2264 21.491 74.2264 22.1494C74.2264 22.8077 74.2264 22.5256 74.0874 22.7137Z" fill="#DBFE02"/>
+            </svg>
+        </a>
+        <nav class="navigation">
+            <div class="navigation-item navigation-item-more current">
+                    <span class="navigation-item-more-text">Offerings</span>
+                    <svg class="navigation-item-more-icon" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.1406 1.76953L12.8652 0.978516L7.02832 10.3906L1.6543 1.00098L1.00293 1.37402L0.351562 1.74609L6.97754 13.3203L14.1406 1.76953Z" fill="#4E4BD3"/>
+                    </svg>
+
+                <div class="navigation-sub">
+                    <a class="navigation-sub-item" href="offering1.html">Embodied Leadership Fundamentals</a>
+                    <a class="navigation-sub-item" href="offering2.html">The Alive School Community Space</a>
+                </div>
+            </div>
+            <a class="navigation-item" href="#">About</a>
+            <a class="navigation-item" href="#">Registration</a>
+            <a class="navigation-item" href="#">Contact</a>
+        </nav>
+    </div>
+</header>
+<!-- Main part of the page starts here -->
+<main>
+    <section class="section content">
+        <div class="section-decoration-overlay section-decoration-overlay-bottom">
+            <svg class="decoration-triangle" width="335" height="100" viewBox="0 0 335 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M335 0V100H0L335 0Z" fill="#DBFE02"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="page-title">Embodied Leadership Fundamentals</div>
+            <h1 class="section-title section-title-xxl">Empower Yourself!</h1>
+            <div class="section-intro">
+                <p>1-day leadership training in a relaxed location in Berlin + online retro; time to reflect, refine and embody your personal leadership style; the latest in neuropsychology and bodywork; unlock community membership benefits</p>
+            </div>
+            <div class="section-content">
+                <div class="section-content-text">
+                    <h2 class="section-content-title">Goals and benefits of the leadership training</h2>
+                    <p>You learn the fundamentals of embodied leadership and how to apply them and fine-tune your leadership style:</p>
+                    <ul class="content-list">
+                        <li>Understand and take advantage of the body-mind connection as a leader: Build resilience, improve your psychological health and lead with more energy.</li>
+                        <li>Learn the key competences that help you to navigate yourself and your team in a VUCA or BANI world.</li>
+                        <li>Lead with more inner clarity and focus: (Re-) define your leadership statement and create more impact in your team and organisation.</li>
+                        <li>Learn how to integrate and use your body intelligence in your leadership through mindfulness and breathwork.</li>
+                        <li>Understand and manage stress better: Break you stress patterns and build powerful routines to ensure peak performance and sustainable health.</li>
+                        <li>Start to truly embody your leadership purpose in your everyday life: Master ciritcal situations and embrace lifelong learning.</li>
+                    </ul>
+                    <p>The face-to-face training in Berlin takes one day from 9.30-18.00. Your trainer will be Julius Lassalle. Approx. 6 weeks after the training, there will be an online retro for those interested (if you don't have time here, you can take part in another online retro).</p>
+                    <h3 class="section-content-subtitle">Certificate</h3>
+                    <p>A certificate of participation for the training can be issued upon request after completion of the training and the online retro.</p>
+                    <div class="section-content-action">
+                        <a href="#" class="btn btn-secondary-fill">
+                            <span>Register now</span>
+                            <svg class="btn-arrow" width="43" height="49" viewBox="0 0 43 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.2997 0.25V40.1241C25.8385 32.8866 33.6872 27.8829 42.7 27.8829V29.8829C31.8758 29.8829 23.0993 37.685 22.3525 47.4014C22.3828 47.8456 22.4003 48.2936 22.4003 48.7452H22.2997V48.8848H20.2997V46.8809C19.2855 37.4079 10.6303 29.8829 0 29.8829V27.8829C8.92935 27.8829 16.7148 32.7947 20.2997 39.9239V0.25H22.2997Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="section-content-media">
+                    <img class="section-content-media-src" src="media/img-fundamentals_1.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section info">
+        <div class="container">
+            <div class="info-content">
+                <h3 class="section-content-title">Key content of the leadership training</h3>
+                <p>Many managers have the feeling of being in a hamster wheel - although they run and run, they never reach their goal and fulfil neither their own expectations of themselves nor the expectations of others. That's why the motto of the training is: Get out of the hamster wheel and into the driver's seat! To achieve this, our body is the most important guide.</p>
+                <p>This leadership training in Berlin is about developing inner clarity, strength and determination to embody the kind of leadership that suits you best in the truest sense of the word. You will learn to "empower yourself" (no one else can empower you!), the essential skill to develop an optimal mix of performance, satisfaction and joy as a leader.</p>
+            </div>
+            <div class="info-aside">
+                <h3 class="info-aside-title">The following aspects are part of our training:</h3>
+                <ol class="info-list">
+                    <li>Fundamentals of neuro-leadership for optimal self-management: if we understand our stress better, we can deal with it better</li>
+                    <li>Practical body hacks and stress exercises: Here you will learn in a very practical way how to deal with your stress reactions, both in the long term and in critical situations in everyday life</li>
+                    <li>Get to know the 4 steps of embodied leadership: Awareness, Attraction, Action and Alignment. These steps will help you to orientate yourself as a leader and find clarity</li>
+                    <li>Examine your own goals and values as a leader; you will learn to understand the interaction between goals and values and how you can combine performance and satisfaction</li>
+                    <li>Develop mindfulness - for yourself, for others and for the situation you find yourself in; mindfulness is the basis for good decisions for more success on the outside and satisfaction on the inside</li>
+                    <li>Develop your personal leadership statement that summarises who you are as a leader and the impact you want to have in the world</li>
+                    <li>Define new leadership…</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="section info more-info">
+        <div class="container">
+            <div class="info-content">
+                <img class="info-content-pic" src="media/img-fundamentals_2.jpg" width="460" height="460">
+                <h3 class="section-content-title">Who is the management training programme in Berlin for?</h3>
+                <p>The training is aimed at leaders in organisations, consultants and professionals that are interested in a new, powerful type of leadership:</p>
+                <ul class="content-list">
+                    <li>who want to bring more mindfulness into their everyday management work and achieve more inner balance;</li>
+                    <li>who believe in holistic leadership, i.e. leadership that is not only controlled by the head, but also by our intuition, in which rational solutions must always be a human fit as well</li>
+                    <li>who are keen to experiment and explore thei aliveness in a vibrant, trusting atmosphere</li>
+                </ul>
+                <div class="info-attention">The completion of the training gives you access to the Alive School community benefits such as the membership rate for our Community Space.</div>
+            </div>
+            <div class="info-aside">
+                <h3 class="section-content-title">Methods</h3>
+                <p>In leadership training, we always start from your personal experience and discuss solutions to problems on the basis of practical cases rather than just theory. This is then added as additional input. In contrast to most conventional training programmes, learning at the Alive School is always holistic, i.e:</p>
+                <ul class="content-list">
+                    <li>with the head/mind: models and theoretical input, self-reflection</li>
+                    <li>with the body/heart: individual and group exercises, body hacks</li>
+                    <li>at the behavioural level: simulations, routines, action plans</li>
+                </ul>
+                <div class="info-schedule">
+                    <div class="section-decoration-overlay section-decoration-overlay-top">
+                        <svg class="decoration-triangle-small" width="217" height="63" viewBox="0 0 217 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M217 63L217 0L0.464279 1.87959e-05L217 63Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3 class="info-schedule-title">Dates and conditions</h3>
+                    <div class="info-schedule-list">
+                        <div class="info-schedule-item">
+                            <div class="info-schedule-ico">
+                                <svg width="40" height="31" viewBox="0 0 40 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M38.7427 4.51709H1.25757V30.0977H38.7427V4.51709Z" stroke="#4E4BD3" stroke-miterlimit="10"/>
+                                    <path d="M1.25757 11.7754H38.7427" stroke="#4E4BD3" stroke-miterlimit="10"/>
+                                    <path d="M9.29004 8.32385V0" stroke="#4E4BD3" stroke-miterlimit="10"/>
+                                    <path d="M30.3496 8.32385V0" stroke="#4E4BD3" stroke-miterlimit="10"/>
+                                </svg>
+                            </div>
+                            <div class="info-schedule-desc">
+                                <div class="info-schedule-head">Dates</div>
+                                <div class="info-schedule-row">
+                                    <div>September 18, 2025 (in German) + </div>
+                                    <div>90 min online retro October 12, 2025</div>
+                                </div>
+                                <div class="info-schedule-row">
+                                    <div>December 6, 2025 (in English/bilngual) +</div>
+                                    <div>90 min online retro January 13, 2026</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-schedule-item">
+                            <div class="info-schedule-ico">
+                                <svg width="29" height="44" viewBox="0 0 29 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.5965 1C7.2248 1 1.24731 6.95964 1.24731 14.3094C1.24731 16.9565 3.04204 21.0134 4.21381 23.1823L14.5965 42.4069L24.9793 23.1823C26.151 21.0134 27.9458 16.9565 27.9458 14.3094C27.9458 6.95964 21.9683 1 14.5965 1ZM14.5965 7.90116C18.1464 7.90116 21.0239 10.7701 21.0239 14.3094C21.0239 17.8487 18.1464 20.7176 14.5965 20.7176C11.0466 20.7176 8.16913 17.8487 8.16913 14.3094C8.16913 10.7701 11.0466 7.90116 14.5965 7.90116Z" stroke="#4E4BD3" stroke-miterlimit="10"/>
+                                </svg>
+                            </div>
+                            <div class="info-schedule-desc">
+                                <div class="info-schedule-head">Location</div>
+                                <div class="info-schedule-row">
+                                    <div>The Lovers & Leaders Space</div>
+                                    <div>Torstrasse 101, 10119 Berlin</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-schedule-item">
+                            <div class="info-schedule-ico">
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28.3822 8.51504C25.9351 4.00602 21.1546 1 15.5774 1C7.60988 1 1.12207 7.34603 1.12207 15.1394C1.12207 22.9328 7.60988 29.2788 15.5774 29.2788C23.5448 29.2788 25.1383 26.7181 27.6993 22.8215" stroke="#4E4BD3" stroke-miterlimit="10"/>
+                                    <path d="M0.951172 15.6406H8.80483" stroke="#4E4BD3" stroke-miterlimit="10"/>
+                                    <path d="M0.951172 13.3022H8.80483" stroke="#4E4BD3" stroke-miterlimit="10"/>
+                                </svg>
+                            </div>
+                            <div class="info-schedule-desc">
+                                <div class="info-schedule-head">Investment</div>
+                                <div class="info-schedule-row">
+                                    <div>599 € plus VAT.</div>
+                                    <div>This includes the digital workbook, drinks, snacks and lunch</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-schedule-item">
+                            <div class="info-schedule-ico">
+                                <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.358 2L24.6608 14.5549H38.5825L27.3189 22.3138L31.6217 34.8687L20.358 27.1099L9.09441 34.8687L13.3972 22.3138L2.13354 14.5549H16.0553L20.358 2Z" stroke="#4E4BD3" stroke-miterlimit="10"/>
+                                </svg>
+                            </div>
+                            <div class="info-schedule-desc">
+                                <div class="info-schedule-head">Discounts</div>
+                                <ul class="content-list">
+                                    <li>499,- € early bird (booking at least 8 weeks before the training)</li>
+                                    <li>449,- € member (registered for community newsletter)</li>
+                                    <li>349,- € early bird + member (registered for community newsletter)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-schedule-action">
+                        <a href="#" class="btn btn-secondary-line">
+                            <span>Register now</span>
+                            <svg class="btn-arrow" width="43" height="49" viewBox="0 0 43 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.2997 0.25V40.1241C25.8385 32.8866 33.6872 27.8829 42.7 27.8829V29.8829C31.8758 29.8829 23.0993 37.685 22.3525 47.4014C22.3828 47.8456 22.4003 48.2936 22.4003 48.7452H22.2997V48.8848H20.2997V46.8809C19.2855 37.4079 10.6303 29.8829 0 29.8829V27.8829C8.92935 27.8829 16.7148 32.7947 20.2997 39.9239V0.25H22.2997Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Footer starts here -->
+<footer class="footer">
+    <div class="footer-form">
+        <div class="container">
+            <form action="#">
+                <h4 class="form-title">Any Questions?</h4>
+                <div class="form-description">Still have questions? Please feel free to contact us!</div>
+                <div class="form-group">
+                    <div class="input-text">
+                        <input class="input-field" type="text" placeholder="Name">
+                    </div>
+                    <div class="input-text">
+                        <input class="input-field" type="text" placeholder="Surname">
+                    </div>
+                    <div class="input-text">
+                        <input class="input-field" type="email" placeholder="Email">
+                    </div>
+                    <div class="textarea">
+                        <textarea class="input-textarea" placeholder="Your Questions to Us"></textarea>
+                    </div>
+                </div>
+                <div class="form-action">
+                    <label class="checkbox">
+                        <input class="checkbox-input" type="checkbox"/>
+                        <div class="checkbox-wrapper">
+                            <span class="checkbox-symbol"></span>
+                            <svg class="checkbox-hook" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.9816 5.29847C16.369 4.90489 17.0022 4.89992 17.3957 5.28736C17.7893 5.67481 17.7943 6.30795 17.4068 6.70153L8.98847 15.2532C8.60102 15.6468 7.96788 15.6517 7.5743 15.2643C7.18072 14.8769 7.17575 14.2437 7.56319 13.8501L15.9816 5.29847Z" fill="#4E4BD3"/>
+                                <path d="M3.29847 11.0551C2.90489 10.6677 2.89992 10.0345 3.28736 9.64094C3.67481 9.24736 4.30795 9.24239 4.70153 9.62983L8.97736 13.839C9.37094 14.2265 9.37591 14.8596 8.98847 15.2532C8.60102 15.6468 7.96788 15.6517 7.5743 15.2643L3.29847 11.0551Z" fill="#4E4BD3"/>
+                            </svg>
+
+                        </div>
+                        <span class="checkbox-label">I have read and agreed to the privacy policy.</span>
+                    </label>
+                    <button type="submit" class="btn btn-primary-line">
+                        <span>Send Request</span>
+                        <svg class="btn-arrow" width="43" height="49" viewBox="0 0 43 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.2997 0.25V40.1241C25.8385 32.8866 33.6872 27.8829 42.7 27.8829V29.8829C31.8758 29.8829 23.0993 37.685 22.3525 47.4014C22.3828 47.8456 22.4003 48.2936 22.4003 48.7452H22.2997V48.8848H20.2997V46.8809C19.2855 37.4079 10.6303 29.8829 0 29.8829V27.8829C8.92935 27.8829 16.7148 32.7947 20.2997 39.9239V0.25H22.2997Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-group">
+                <h4 class="footer-group-title">Contact</h4>
+                <div>Julius Lassalle</div>
+                <div class="footer-group-item">Phone  <a class="footer-link" href="tel:+4917656374057">+49 176 56374057</a></div>
+                <div class="footer-group-item">Email <a class="footer-link" href="mailto:julius@lassalle.berlin">julius@lassalle.berlin</a></div>
+            </div>
+            <div class="footer-group">
+                <div><a href="#" class="footer-link">Leadership Fundamentals</a></div>
+                <div><a href="#" class="footer-link">Community Space</a></div>
+                <div><a href="#" class="footer-link">About</a></div>
+                <div><a href="#" class="footer-link">Registration</a></div>
+                <div><a href="#" class="footer-link">Contact</a></div>
+            </div>
+            <div class="footer-group">
+                <div><a href="#" class="footer-link">Imprint</a></div>
+                <div><a href="#" class="footer-link">Privacy policy</a></div>
+            </div>
+            <div class="footer-bottom-group">
+                <span>&copy; Julius Lassalle, 2025</span>
+                <a href="#" class="footer-social-link">
+                    <svg class="footer-social-icon footer-social-linkedin" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.9883 26.7929H14.6397V14.6225H10.9883V26.7929ZM25.2136 14.2009C23.4415 14.2009 21.8559 14.8481 20.7311 16.2765V14.5824H17.0662V26.7931H20.7311V20.1899C20.7311 18.7944 22.0096 17.433 23.611 17.433C25.2124 17.433 25.6073 18.7944 25.6073 20.1557V26.7919H29.2586V19.884C29.2585 15.0857 26.9869 14.2009 25.2136 14.2009ZM12.7969 13.4062C13.8061 13.4062 14.6251 12.5872 14.6251 11.578C14.6251 10.5689 13.8061 9.75 12.7969 9.75C11.7878 9.75 10.9688 10.569 10.9688 11.5782C10.9688 12.5873 11.7878 13.4062 12.7969 13.4062Z" fill="#4E4BD3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector("header");
+        const section = document.getElementById("promo-end");
+
+        function checkSectionTouch() {
+            const headerRect = header.getBoundingClientRect();
+            const sectionRect = section.getBoundingClientRect();
+
+            // When top of the section reaches or goes above bottom of the header
+            if (sectionRect.top <= headerRect.bottom) {
+                header.classList.add("header-active");
+            } else {
+                header.classList.remove("header-active");
+            }
+        }
+
+        window.addEventListener("scroll", checkSectionTouch);
+        checkSectionTouch(); // Initial check
+    });
+</script>
+</body>
+</html>
