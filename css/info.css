@@ -1,0 +1,110 @@
+.info {
+    background: rgba(190, 209, 255, 0.4);
+    padding: 140px 0 200px;
+}
+.info.more-info {
+    background: #fff;
+    padding: 60px 0 140px;
+}
+.info .container {
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.info-content {
+    flex: 0 0 40%;
+    font-size: 20px;
+    line-height: 30px;
+}
+.info-content p,
+.info-aside p{
+    margin: 0 0 30px;
+}
+.info-aside {
+    flex: 0 0 50%;
+    font-size: 20px;
+    line-height: 30px;
+}
+.info-aside .info-aside-title {
+    font-weight: 700;
+    margin: 0 0 20px 123px;
+}
+.info-list {
+    list-style: none;
+    counter-reset: my-counter;
+    padding: 0;
+}
+
+.info-list li {
+    counter-increment: my-counter;
+    position: relative;
+    padding: 10px 0 10px 123px;
+    border-top: 1px solid #4E4BD3;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.info-list li::before {
+    content: counter(my-counter, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1;
+}
+.info-content-pic {
+    margin: -270px 0 140px;
+}
+.info-schedule {
+    background: #92B2FF;
+    position: relative;
+    padding: 65px 55px 65px;
+    margin: 300px 0 0;
+    color: #fff;
+}
+.info-schedule .section-decoration-overlay {
+    right: 0;
+    left: auto;
+}
+.info-schedule-title {
+    font-weight: 700;
+    margin: 0 0 30px 60px;
+    font-size: 30px;
+    line-height: 40px;
+}
+.info-schedule-list {
+    margin: 0;
+}
+.info-schedule-item {
+    display: flex;
+    gap: 20px;
+}
+.info-schedule-ico {
+    flex: 0 0 40px;
+    position: relative;
+    text-align: center;
+}
+.info-schedule-desc {
+    flex: 1;
+    font-size: 20px;
+    line-height: 30px;
+}
+.info-schedule-head {
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+.info-schedule-head .notes {
+    font-weight: 300;
+}
+.info-schedule-row {
+    margin: 0 0 30px;
+}
+.info-attention {
+    background: url("../img/arrow-big.svg") no-repeat;
+    padding: 40px 0 0 245px;
+    margin: 60px 0;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4E4BD3;
+}

@@ -9,11 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="home">
 <!-- Header starts here -->
 <header class="header">
     <div class="container">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
             <svg width="115" height="68" viewBox="0 0 115 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M31.2752 4.74965L24.4641 7.28907V35.3167H31.2752V4.74965Z" fill="#DBFE02"/>
                 <path d="M34.0088 35.3167H40.7735V15.9889L34.0088 18.4813V35.3167Z" fill="#DBFE02"/>
@@ -32,14 +32,14 @@
         <nav class="navigation">
             <div class="navigation-item navigation-item-more">
 
-                    <span>Offerings</span>
+                    <span class="navigation-item-more-text">Offerings</span>
                     <svg class="navigation-item-more-icon" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.1406 1.76953L12.8652 0.978516L7.02832 10.3906L1.6543 1.00098L1.00293 1.37402L0.351562 1.74609L6.97754 13.3203L14.1406 1.76953Z" fill="#4E4BD3"/>
                     </svg>
 
                 <div class="navigation-sub">
-                    <a class="navigation-sub-item" href="#">Embodied Leadership Fundamentals</a>
-                    <a class="navigation-sub-item" href="#">The Alive School Community Space</a>
+                    <a class="navigation-sub-item" href="offering1.html">Embodied Leadership Fundamentals</a>
+                    <a class="navigation-sub-item" href="offering2.html">The Alive School Community Space</a>
                 </div>
             </div>
             <a class="navigation-item" href="#">About</a>
@@ -84,7 +84,7 @@
             </div>
         </div>
     </section>
-    <section class="section">
+    <section class="section" id="promo-end">
         <div class="section-decoration-bg">
             <svg class="decoration-curve" width="546" height="546" viewBox="0 0 546 546" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M546 80C288.635 80 80 288.635 80 546H0C0 244.453 244.453 0 546 0V80Z" fill="#92B2FF" fill-opacity="0.2"/>
@@ -346,5 +346,26 @@
         </div>
     </div>
 </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector("header");
+        const section = document.getElementById("promo-end");
+
+        function checkSectionTouch() {
+            const headerRect = header.getBoundingClientRect();
+            const sectionRect = section.getBoundingClientRect();
+
+            // When top of the section reaches or goes above bottom of the header
+            if (sectionRect.top <= headerRect.bottom) {
+                header.classList.add("header-active");
+            } else {
+                header.classList.remove("header-active");
+            }
+        }
+
+        window.addEventListener("scroll", checkSectionTouch);
+        checkSectionTouch(); // Initial check
+    });
+</script>
 </body>
 </html>

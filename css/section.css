@@ -19,6 +19,12 @@
     line-height: 40px;
     margin: 0 0 10px;
 }
+.section-title-xxl {
+    font-size: 110px;
+    line-height: 114px;
+    flex: 0 0 40%;
+    margin: 0 10% 0 0;
+}
 .section-title-xl {
     font-size: 60px;
     line-height: 70px;
