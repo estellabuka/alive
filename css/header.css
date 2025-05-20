@@ -37,7 +37,14 @@
 .home-page .header .navigation .navigation-item {
     color: #4E4BD3;
 }
-.header .navigation .navigation-item.current .navigation-item-more-text {
+.header .navigation .navigation-item.current {
+    font-weight: 700;
+    color: #DBFE02;
+}
+.header .navigation .navigation-item.navigation-item-more.current {
+    font-weight: 300;
+}
+.header .navigation .navigation-item.navigation-item-more.current .navigation-item-more-text {
     font-weight: 700;
     color: #DBFE02;
 }
@@ -57,7 +64,8 @@
 .header .navigation .navigation-item.navigation-item-more .navigation-item-more-icon * {
     fill: #fff;
 }
-.header .navigation .navigation-item.navigation-item-more.current .navigation-item-more-icon * {
+.header .navigation .navigation-item.navigation-item-more.current .navigation-item-more-icon *,
+.header .navigation .navigation-item.navigation-item-more:hover .navigation-item-more-icon * {
     fill: #DBFE02;
 }
 .home-page .header .navigation .navigation-item.navigation-item-more .navigation-item-more-icon * {
