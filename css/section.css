@@ -136,7 +136,6 @@
     text-align: center;
     font-size: 20px;
     padding: 30px 0;
-    margin: 0 0 130px;
 }
 .attention-primary {
     background: #4E4BD3;
@@ -179,6 +178,9 @@
     display: flex;
     justify-content: center;
     margin: 0 0 150px;
+}
+.section-picture {
+    padding: 140px 0 0;
 }
 .section-picture .container {
     flex-direction: row;

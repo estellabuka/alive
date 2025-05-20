@@ -41,9 +41,9 @@
                     <a class="navigation-sub-item" href="offering2.html">The Alive School Community Space</a>
                 </div>
             </div>
-            <a class="navigation-item" href="#">About</a>
+            <a class="navigation-item" href="about.html">About</a>
             <a class="navigation-item" href="#">Registration</a>
-            <a class="navigation-item" href="#">Contact</a>
+            <a class="navigation-item" href="contact.html">Contact</a>
         </nav>
     </div>
 </header>
@@ -57,7 +57,7 @@
         </div>
         <div class="container">
             <div class="page-title">The Alive School Community Space</div>
-            <h1 class="section-title section-title-xxl">Connect, Recreate, Lead</h1>
+            <h1 class="section-title section-title-xxl section-title-secondary">Connect, Recreate, Lead</h1>
             <div class="section-intro">
                 <p>3-day leadership offsite in a wonderful atmosphere at the countryside near Berlin; time to connect with yourself and to recharge your batteries; exchange with other leaders; explore new solutions for your leadership challenges; the latest in leadership, neuropsychology and bodywork</p>
             </div>
@@ -284,11 +284,11 @@
                 <div class="footer-group-item">Email <a class="footer-link" href="mailto:julius@lassalle.berlin">julius@lassalle.berlin</a></div>
             </div>
             <div class="footer-group">
-                <div><a href="#" class="footer-link">Leadership Fundamentals</a></div>
-                <div><a href="#" class="footer-link">Community Space</a></div>
-                <div><a href="#" class="footer-link">About</a></div>
+                <div><a href="offering1.html" class="footer-link">Leadership Fundamentals</a></div>
+                <div><a href="offering2.html" class="footer-link">Community Space</a></div>
+                <div><a href="about.html" class="footer-link">About</a></div>
                 <div><a href="#" class="footer-link">Registration</a></div>
-                <div><a href="#" class="footer-link">Contact</a></div>
+                <div><a href="contact.html" class="footer-link">Contact</a></div>
             </div>
             <div class="footer-group">
                 <div><a href="#" class="footer-link">Imprint</a></div>
@@ -305,26 +305,5 @@
         </div>
     </div>
 </footer>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const header = document.querySelector("header");
-        const section = document.getElementById("promo-end");
-
-        function checkSectionTouch() {
-            const headerRect = header.getBoundingClientRect();
-            const sectionRect = section.getBoundingClientRect();
-
-            // When top of the section reaches or goes above bottom of the header
-            if (sectionRect.top <= headerRect.bottom) {
-                header.classList.add("header-active");
-            } else {
-                header.classList.remove("header-active");
-            }
-        }
-
-        window.addEventListener("scroll", checkSectionTouch);
-        checkSectionTouch(); // Initial check
-    });
-</script>
 </body>
 </html>

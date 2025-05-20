@@ -8,7 +8,7 @@
     color: #4E4BD3;
     margin: 0 0 30px;
 }
-.content .section-title {
+.section-title-secondary {
     color: #DBFE02;
     margin: 0 0 60px;
 }
@@ -19,15 +19,15 @@
     font-size: 30px;
     line-height: 40px;
 }
-.content .section-content {
+.section-content {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
     line-height: 30px;
     padding: 0 0 150px;
 }
-.content .section-content .section-content-media,
-.content .section-content .section-content-text {
+.section-content .section-content-media,
+.section-content .section-content-text {
     flex: 0 0 40%;
 }
 .section-content-media-src {
@@ -39,7 +39,7 @@
     line-height: 40px;
     margin: 0 0 30px;
 }
-.content .section-content p {
+.section-content p {
     margin: 0 0 30px;
 }
 .content-list {
