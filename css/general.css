@@ -20,6 +20,7 @@ body {
   gap: 20px;
   padding: 0 30px 0 40px;
   cursor: pointer;
+  background: transparent;
 }
 .btn .btn-arrow {
   width: 35px;
