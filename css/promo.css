@@ -1,7 +1,8 @@
 .promo {
     position: relative;
     overflow: hidden;
-    max-height: 100vh;
+    max-height: calc(100vh - 90px);
+    min-height: 600px;
 }
 .promo-media {
     position: relative;
@@ -10,17 +11,19 @@
 .promo-media video {
     width: 100%;
     height: auto;
+    opacity: 0.7;
 }
 .promo-body {
     position: absolute;
-    top: 90px;
+    top: 0;
     width: 100%;
-    height: calc(100% - 90px);
+    height: 100%;
     z-index: 10;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 80px;
     color: #4E4BD3;
 }
 .promo-text {
@@ -32,12 +35,13 @@
 }
 .promo-text-logo {
     width: 45%;
+    max-width: 620px;
     height: auto;
     margin: 0 0 40px;
 }
-.promo-text-logo svg {
+.promo-text-logo img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .promo-text-logo svg * {
     fill: #4E4BD3;

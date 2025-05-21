@@ -28,12 +28,14 @@
 .form-title {
     font-size: 30px;
     line-height: 40px;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0 0 20px;
 }
 .form-description {
+    font-size: 25px;
     font-weight: 300;
     margin: 0 0 10px;
+    line-height: 30px;
 }
 .form-group {
     display: flex;
@@ -52,7 +54,7 @@
 .form-group-title {
     flex: 0 0 100%;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 40px;
     margin: 0 0 20px;
 }
@@ -129,8 +131,9 @@
     flex: 0 0 100%;
 }
 .checkbox {
+    flex: 0 0 100%;
     position: relative;
-    display: inline-flex;
+    display: flex;
     align-items: flex-start;
     cursor: pointer;
 }
@@ -191,7 +194,7 @@
 .aside-head {
     font-size: 25px;
     line-height: 35px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .aside-action,
 .form-action {
@@ -199,6 +202,10 @@
     justify-content: space-between;
     gap: 30px;
     align-items: flex-start;
+}
+.form-action {
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 .contact-page .footer-form .input-text,
 .contact-page .footer-form .textarea,
@@ -250,6 +257,7 @@
 }
 
 .select-items .select-items-option {
+    font-size: 20px;
     padding: 15px 45px;
     cursor: pointer;
     color: #4E4BD3;
