@@ -8,11 +8,11 @@
     background: none;
 }
 .footer-form .container {
-    padding: 140px 350px;
+    padding: 140px 400px;
     position: relative;
 }
 .contact-page .footer-form .container {
-    padding: 180px 350px 90px;
+    padding: 180px 400px 90px;
 }
 .footer-form .form-title {
     width: 288px;
@@ -34,6 +34,8 @@
     display: block;
     padding: 30px;
     text-align: left;
+    font-size: 44px;
+    width: auto;
 }
 .footer-bottom {
     background: #4E4BD3;
@@ -75,12 +77,12 @@
     background: #DBFE02;
 }
 .footer-bottom .footer-group-title {
-    font-weight: 700;
+    font-weight: 600;
     margin: 0 0 20px;
 }
 .footer-bottom .footer-link {
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
 }
 .footer-bottom .footer-link:hover {
     color: #DBFE02;
@@ -89,7 +91,7 @@
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    font-weight: 700;
+    font-weight: 600;
 }
 .footer-group-item .footer-link {
     font-weight: 300;
