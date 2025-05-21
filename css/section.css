@@ -153,6 +153,9 @@
 .attention-link {
     text-decoration: underline;
 }
+.attention-link:hover {
+    text-decoration: none;
+}
 .attention-text .attention-thin {
     font-weight: 300;
 }
